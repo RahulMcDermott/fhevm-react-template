@@ -8,11 +8,9 @@
 [![Vue](https://img.shields.io/badge/Vue-3+-4FC08D.svg)](https://vuejs.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-18+-339933.svg)](https://nodejs.org/)
 
-**🌐 Live Demo**: [https://fhe-renewable-energy-market.vercel.app/](https://fhe-renewable-energy-market.vercel.app/)
+**🌐 Live Demo**: Experience the SDK in action with our deployed example application
 
-**📦 GitHub Repository**: [https://github.com/RahulMcDermott/fhevm-react-template](https://github.com/RahulMcDermott/fhevm-react-template)
-
-**🎯 Example Project**: [FHE Renewable Energy Market](https://github.com/RahulMcDermott/FHERenewableEnergyMarket)
+**📦 GitHub Repository**: Explore the complete source code and examples
 
 ---
 
@@ -265,11 +263,11 @@ async function processData() {
 
 We've built **complete example applications** demonstrating the FHEVM SDK across different frameworks:
 
-### 1. Next.js Energy Market (Recommended)
+### 1. Next.js Energy Market Application (Recommended)
 
 **Location**: `examples/nextjs-energy-market/`
 
-A **full-stack Next.js 14 application** with modern UI showcasing SDK integration in a production environment.
+A **full-stack Next.js 14 application** with modern UI showcasing SDK integration in a production environment. This example demonstrates a privacy-preserving renewable energy marketplace.
 
 **Features**:
 - ✅ Complete Next.js 14 app with App Router
@@ -302,11 +300,11 @@ const { encrypt, isEncrypting } = useEncrypt(client);
 const encrypted = await encrypt(1000, { bits: 32 });
 ```
 
-### 2. Smart Contract + Scripts Example
+### 2. Smart Contract with Node.js Integration
 
 **Location**: `examples/renewable-energy-market/`
 
-A **Hardhat-based smart contract project** with deployment and interaction scripts demonstrating SDK usage in Node.js.
+A **Hardhat-based smart contract project** with deployment and interaction scripts demonstrating SDK usage in Node.js backend environments.
 
 **Features**:
 - ✅ Production-ready smart contracts with FHEVM
@@ -350,20 +348,24 @@ await contract.submitOffer(encrypted, ...);
 - ✅ Emergency controls and access management
 - ✅ Complete privacy preservation
 
-### Example dApp Structure
+### Example Structure Overview
 
 ```
-examples/renewable-energy-market/
-├── contracts/
-│   └── PrivateRenewableEnergyMarket.sol    # Smart contract
-├── scripts/
-│   ├── deploy.js                            # Deployment
-│   ├── verify.js                            # Etherscan verification
-│   └── interact.js                          # Contract interaction
-├── test/
-│   └── PrivateRenewableEnergyMarket.test.js # 45+ tests
-├── hardhat.config.js                        # Hardhat configuration
-└── package.json                             # Dependencies
+examples/
+├── nextjs-energy-market/              # Next.js frontend example
+│   ├── src/
+│   │   ├── app/                       # Next.js App Router
+│   │   ├── components/                # React components with SDK
+│   │   └── lib/                       # Utilities
+│   ├── package.json
+│   └── README.md
+│
+└── renewable-energy-market/           # Smart contract example
+    ├── contracts/                     # Solidity contracts
+    ├── scripts/                       # Deployment & interaction
+    ├── test/                          # Test suite
+    ├── hardhat.config.js
+    └── package.json
 ```
 
 ### Key Contract Functions
@@ -432,7 +434,7 @@ fhevm-react-template/
 │       ├── package.json
 │       └── tsconfig.json
 ├── examples/
-│   ├── nextjs-energy-market/               # Next.js Example (NEW!)
+│   ├── nextjs-energy-market/               # Next.js Example
 │   │   ├── src/
 │   │   │   ├── app/                        # Next.js App Router
 │   │   │   │   ├── layout.tsx              # Root layout
@@ -458,8 +460,8 @@ fhevm-react-template/
 │       │   ├── deploy.js                   # Deploy script
 │       │   ├── verify.js                   # Verification
 │       │   ├── interact.js                 # Interaction
-│       │   └── interact-with-sdk.js        # SDK integration (NEW!)
-│       ├── test/                           # Test suite (45+ tests)
+│       │   └── interact-with-sdk.js        # SDK integration
+│       ├── test/                           # Test suite
 │       ├── hardhat.config.js               # Hardhat config
 │       ├── package.json                    # Dependencies
 │       └── README.md                       # Contract docs
@@ -467,9 +469,6 @@ fhevm-react-template/
 │   ├── ARCHITECTURE.md                     # System architecture
 │   └── API_REFERENCE.md                    # Complete API reference
 ├── README.md                               # This file
-├── SUBMISSION.md                           # Competition submission
-├── DELIVERABLES.md                         # Deliverables checklist
-├── demo.mp4                                # Demo video
 └── package.json                            # Monorepo configuration
 ```
 
@@ -529,7 +528,7 @@ fhevm-react-template/
 
 ```bash
 # Clone repository
-git clone https://github.com/zama-ai/fhevm-react-template
+git clone <repository-url>
 cd fhevm-react-template
 
 # Install dependencies (root + all packages)
@@ -573,13 +572,11 @@ npm run build
 
 ## Deployment
 
-### Live Deployments
+### Deploying the Examples
 
 #### Next.js Application
 
-The example renewable energy marketplace is **live and deployed**:
-
-**🌐 Live Application**: [https://fhe-renewable-energy-market.vercel.app/](https://fhe-renewable-energy-market.vercel.app/)
+Deploy the Next.js example to your preferred hosting platform:
 
 **Features:**
 - Real-time encryption/decryption using FHEVM SDK
@@ -588,13 +585,19 @@ The example renewable energy marketplace is **live and deployed**:
 - Trading period management
 - Privacy-preserving operations
 
+**Deployment Options:**
+- Vercel (recommended)
+- Netlify
+- AWS Amplify
+- Docker container
+
 #### Smart Contract
 
-Deployed on **Sepolia Testnet**:
+Deploy to FHEVM-compatible networks:
 
-**📦 Contract Repository**: [https://github.com/RahulMcDermott/FHERenewableEnergyMarket](https://github.com/RahulMcDermott/FHERenewableEnergyMarket)
-
-**Network**: Sepolia (Chain ID: 11155111)
+**Supported Networks:**
+- Sepolia Testnet (Chain ID: 11155111)
+- Other FHEVM-enabled networks
 
 ### Deploy Your Own
 
@@ -629,23 +632,18 @@ vercel deploy
 
 📹 **Complete Demonstration Video**
 
-A comprehensive video demonstration (`demo.mp4`) is included in this repository. **Please download the video file to watch it** - the file cannot be viewed directly in the browser.
-
-**To watch the demo:**
-1. Navigate to the repository root directory
-2. Download `demo.mp4` to your local machine
-3. Open the file with your preferred video player
+A comprehensive video demonstration showcasing the FHEVM SDK capabilities and example applications.
 
 **The demo video showcases:**
 
 1. **SDK Installation & Setup** (< 2 minutes)
 2. **React Integration** with hooks and provider
-3. **Example dApp Walkthrough**: Private Renewable Energy Market
+3. **Example Application Walkthrough**: Private Renewable Energy Market
 4. **Encryption & Decryption** in action
-5. **Contract Deployment** to Sepolia
+5. **Contract Deployment** to test networks
 6. **Live Trading Simulation** with confidential data
 7. **Design Decisions** and architecture overview
-8. **Live Demo**: [https://fhe-renewable-energy-market.vercel.app/](https://fhe-renewable-energy-market.vercel.app/)
+8. **Production deployment** examples
 
 ---
 
@@ -744,7 +742,7 @@ We welcome contributions to make this SDK even better! Please see our [Contribut
 1. **Fork the Repository**
    ```bash
    # Fork on GitHub, then clone
-   git clone https://github.com/YOUR_USERNAME/fhevm-react-template.git
+   git clone <your-fork-url>
    cd fhevm-react-template
    ```
 
@@ -815,11 +813,10 @@ This SDK is built on **Zama's FHEVM**, enabling Fully Homomorphic Encryption on 
 
 ### Community
 
-- **GitHub Repository**: [https://github.com/RahulMcDermott/fhevm-react-template](https://github.com/RahulMcDermott/fhevm-react-template)
-- **Example Project**: [https://github.com/RahulMcDermott/FHERenewableEnergyMarket](https://github.com/RahulMcDermott/FHERenewableEnergyMarket)
-- **Live Demo**: [https://fhe-renewable-energy-market.vercel.app/](https://fhe-renewable-energy-market.vercel.app/)
 - **Zama Discord**: Join the Zama community for FHEVM discussions
 - **Twitter**: Follow [@zama_fhe](https://twitter.com/zama_fhe) for updates
+- **GitHub Issues**: Report bugs and request features
+- **Discussions**: Share ideas and get help from the community
 
 ---
 
@@ -828,10 +825,10 @@ This SDK is built on **Zama's FHEVM**, enabling Fully Homomorphic Encryption on 
 ### Getting Help
 
 - 📖 **Documentation**: See `docs/` directory for comprehensive guides
-- 💬 **GitHub Discussions**: [Ask questions and share ideas](https://github.com/RahulMcDermott/fhevm-react-template/discussions)
-- 🐛 **Bug Reports**: [Open an issue on GitHub](https://github.com/RahulMcDermott/fhevm-react-template/issues)
+- 💬 **GitHub Discussions**: Ask questions and share ideas
+- 🐛 **Bug Reports**: Open an issue on GitHub
 - 💡 **Feature Requests**: We'd love to hear your ideas
-- 🌐 **Live Demo**: Try the [deployed application](https://fhe-renewable-energy-market.vercel.app/)
+- 🎯 **Examples**: Explore the working examples in the `examples/` directory
 
 ### Frequently Asked Questions
 
@@ -856,26 +853,24 @@ A: Absolutely! Works seamlessly with ethers.js, wagmi, and other web3 libraries.
 
 ## Quick Links
 
-### 🚀 Try It Live
-- **Live Application**: [https://fhe-renewable-energy-market.vercel.app/](https://fhe-renewable-energy-market.vercel.app/)
-- **Interact with the deployed privacy-preserving energy marketplace**
+### 🚀 Get Started
+- **Installation**: `npm install @fhevm/sdk`
+- **Quick Start**: See the [Quick Start](#quick-start) section above
+- **Examples**: Explore `examples/` directory for complete implementations
 
-### 📦 Source Code
-- **SDK Repository**: [https://github.com/RahulMcDermott/fhevm-react-template](https://github.com/RahulMcDermott/fhevm-react-template)
-- **Example Contract**: [https://github.com/RahulMcDermott/FHERenewableEnergyMarket](https://github.com/RahulMcDermott/FHERenewableEnergyMarket)
-
-### 📹 Demo Video
-- **Download `demo.mp4`** from the repository root to see the complete walkthrough
+### 📦 Resources
+- **Documentation**: Comprehensive guides in `docs/` directory
+- **API Reference**: Full API documentation available
+- **Example Applications**: Next.js and Node.js examples included
 
 ### 🤝 Get Involved
-- **Report Issues**: [GitHub Issues](https://github.com/RahulMcDermott/fhevm-react-template/issues)
-- **Contribute**: See [CONTRIBUTING.md](CONTRIBUTING.md)
-- **Discussions**: [GitHub Discussions](https://github.com/RahulMcDermott/fhevm-react-template/discussions)
+- **Report Issues**: Open GitHub Issues for bugs
+- **Contribute**: See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines
+- **Discussions**: Join community discussions
+- **Share Feedback**: Help us improve the SDK
 
 ---
 
 **Built with privacy, designed for developers, powered by Zama's FHEVM.**
 
-**Start building confidential dApps in < 10 lines of code!**
-
-**🌐 Live Demo**: [https://fhe-renewable-energy-market.vercel.app/](https://fhe-renewable-energy-market.vercel.app/)
+**Start building confidential applications in < 10 lines of code!**
