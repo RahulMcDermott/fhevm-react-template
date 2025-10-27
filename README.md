@@ -8,11 +8,9 @@
 [![Vue](https://img.shields.io/badge/Vue-3+-4FC08D.svg)](https://vuejs.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-18+-339933.svg)](https://nodejs.org/)
 
-**🌐 Live Demo**: Experience the SDK in action with our deployed example application
+**🌐 Live Demo**: [https://fhe-renewable-energy-market.vercel.app/](https://fhe-renewable-energy-market.vercel.app/)
 
-**📦 GitHub Repository**: Explore the complete source code and examples
-
----
+demo.mp4
 
 ## Overview
 
