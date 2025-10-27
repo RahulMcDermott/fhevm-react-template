@@ -1,0 +1,21 @@
+{
+  "name": "private-renewable-energy-market",
+  "version": "1.0.0",
+  "description": "Private Renewable Energy Market - Confidential Trading Platform for Clean Energy",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server . -p 3000 -c-1 --cors",
+    "dev": "npx http-server . -p 3000 -c-1 --cors"
+  },
+  "keywords": [
+    "renewable-energy",
+    "blockchain",
+    "ethereum",
+    "privacy",
+    "trading"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}
